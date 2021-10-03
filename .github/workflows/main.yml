@@ -24,6 +24,7 @@ jobs:
            gabrielg81/rootten-potatoes:latest
            gabrielg81/rootten-potatoes:${{ github.run_number }}
   CD:
+      needs: [CI]
       runs-on: ubuntu-latest
 
       steps:
